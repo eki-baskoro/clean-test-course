@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Disable debug
-        run: sed -i 's/DEBUG = True/DEBUG = False/' hangry_api/hangri_api/settings.py
+        run: sed -i 's/DEBUG = True/DEBUG = False/' hangry_api/hangry_api/settings.py
       - name: Run PyCharm security
         uses: tonybaloney/pycharm-security@1.25.1
   build_and_test:
